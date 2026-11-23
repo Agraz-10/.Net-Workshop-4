@@ -1,11 +1,5 @@
-﻿public class Student
+﻿public class Program
 {
-    public string Name;
-    public string Course;
-    public int Age;
-
-    public static string college = "IIC";
-
     public static void Main(string[] args)
     {
         Student s1 = new Student();

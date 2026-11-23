@@ -26,11 +26,11 @@
 
         Console.WriteLine("It is: " + dayType);
 
-        Book book1 = new Book("Rich Dad Poor Dad", "Robert Kiyosaki", 500);
+        Book book1 = new Book("Ramayana", "Valmiki", 2000);
 
         Book book2 = book1 with
         {
-            title = "Atomic Habits",
+            title = "Mahabharat",
             price = 800
         };
 
