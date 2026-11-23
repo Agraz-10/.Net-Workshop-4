@@ -1,27 +1,5 @@
-﻿public class ParameterDemo
+﻿public class Program
 {
-    public void Increase(ref int number)
-    {
-        number = number + 10;
-    }
-
-    public void GetFullName(out string fullname)
-    {
-        fullname = "Agraz Adhikari";
-    }
-
-    public int SumAll(params int[] numbers)
-    {
-        int sum = 0;
-
-        foreach (int number in numbers)
-        {
-            sum = sum + number;
-        }
-
-        return sum;
-    }
-
     public static void Main(string[] args)
     {
         ParameterDemo obj = new ParameterDemo();
@@ -40,6 +18,6 @@
 
         int total = obj.SumAll(10, 20, 30, 40);
 
-        Console.WriteLine("Sum: " + total);
+        Console.WriteLine("Total Sum: " + total);
     }
 }
