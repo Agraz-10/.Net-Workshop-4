@@ -1,21 +1,5 @@
-﻿public class Player
+﻿public class Program
 {
-    public string playerName;
-    public int level;
-    public int health;
-
-    public Player()
-    {
-        Console.WriteLine("Default constructor has been called");
-    }
-
-    public Player(string name, int playerLevel, int playerHealth)
-    {
-        playerName = name;
-        level = playerLevel;
-        health = playerHealth;
-    }
-
     public static void Main(string[] args)
     {
         Player p1 = new Player();
