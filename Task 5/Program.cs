@@ -1,13 +1,5 @@
-﻿public class Task5
+﻿public class Program
 {
-    public enum DayType
-    {
-        Weekday,
-        Weekend
-    }
-
-    public record Book(string title, string author, double price);
-
     public static void Main(string[] args)
     {
         Console.Write("Enter a day: ");
@@ -26,21 +18,20 @@
 
         Console.WriteLine("It is: " + dayType);
 
-        Book book1 = new Book("Ramayana", "Valmiki", 2000);
+        Book book1 = new Book("Ramayana", "Valmiki", 3500);
 
         Book book2 = book1 with
         {
-            title = "Mahabharat",
-            price = 800
+            title = "Game of Thrones",
+            price = 2800
         };
 
         Console.WriteLine("\nFirst Book:");
         Console.WriteLine(book1);
 
-        Console.WriteLine("\nSecond Book:");
-
         var (title, author, price) = book2;
 
+        Console.WriteLine("\nSecond Book:");
         Console.WriteLine("Title: " + title);
         Console.WriteLine("Author: " + author);
         Console.WriteLine("Price: " + price);
